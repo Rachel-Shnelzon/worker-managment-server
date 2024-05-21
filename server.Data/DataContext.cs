@@ -17,7 +17,8 @@ namespace Server.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=WorkersDataBase");
+            //optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=WorkersDataBase");
+            optionsBuilder.UseSqlServer(@"Server=34.122.63.173;Database=workerManagmentDB;Uid=SqlServer;Pwd=123456;TrustServerCertificate=Yes");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
